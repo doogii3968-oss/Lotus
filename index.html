@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b24">
+<title>LOTUS — Өөрийгөө олох нь Амар амгалан</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;color:#f8efff;
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+ background:radial-gradient(ellipse at 50% 15%,#30205d 0%,#101638 40%,#05091e 80%);
+}
+a{color:inherit;text-decoration:none}
+header{
+ display:flex;align-items:center;justify-content:space-between;
+ padding:20px 6%;gap:12px;border-bottom:1px solid #ffffff18;
+}
+.logo{font-family:Georgia,serif;font-size:27px;letter-spacing:4px;color:#ffc9ed}
+nav{display:flex;gap:20px;font-size:13px}
+nav a:hover{color:#ffb4ed}
+.login{border:1px solid #db8cff;border-radius:30px;padding:9px 16px}
+.hero{
+ text-align:center;padding:65px 20px 55px;overflow:hidden;
+ background:radial-gradient(ellipse at center,#48306d66,transparent 68%);
+}
+.lotus{font-size:62px;color:#ffb5ec;text-shadow:0 0 35px #ec8cff}
+h1{
+ font-family:Georgia,serif;font-size:clamp(55px,12vw,100px);
+ letter-spacing:8px;margin:8px 0;
+ background:linear-gradient(90deg,#c6baff,#fff0fa,#ffc29e);
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.tagline{font-family:Georgia,serif;font-size:clamp(22px,5vw,35px);color:#f3aee7}
+.intro{max-width:540px;margin:20px auto;color:#d7d5f5;line-height:1.8}
+.cta{
+ display:inline-block;margin-top:14px;padding:15px 24px;border-radius:30px;
+ background:linear-gradient(100deg,#bd78ff,#ffb5db,#ffd0a2);
+ color:#241437;font-weight:700;box-shadow:0 0 25px #c17bff55;
+}
+.section{padding:35px 6%}
+.section h2{text-align:center;font-family:Georgia,serif;font-size:28px;letter-spacing:3px}
+.sub{text-align:center;color:#c9c6e9;line-height:1.7;margin-bottom:28px}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{
+ padding:19px 15px;border:1px solid var(--accent);border-radius:22px;
+ background:linear-gradient(155deg,var(--tint),#0b102b 75%);
+ box-shadow:0 0 20px #9d76ff12;display:flex;flex-direction:column;
+ min-height:245px;
+}
+.symbol{font-size:38px;margin-bottom:18px}
+.card h3{font-size:19px;line-height:1.4;margin:0 0 10px}
+.card p{font-size:13px;line-height:1.7;color:#d3d0ed;flex:1;margin:0 0 20px}
+.price{font-size:21px;font-weight:750;color:var(--accent)}
+.future{--accent:#83baff;--tint:#132c59}
+.mind{--accent:#d69bff;--tint:#30164f}
+.style{--accent:#ffc38c;--tint:#49253c}
+.love{--accent:#ff8bc9;--tint:#4c1743}
+.bundle{
+ margin:8px 6% 30px;padding:27px;border-radius:23px;
+ border:1px solid #ffc6aa;
+ background:radial-gradient(ellipse at 85% 50%,#65346b,#111633 65%);
+ box-shadow:0 0 28px #e89bff20;
+}
+.bundle h2{font-family:Georgia,serif;font-size:32px;margin:0 0 8px;color:#ffd0a5}
+.bundle p{color:#e4ddf5;line-height:1.8}
+.bundle .price{color:#ffd0a5;font-size:27px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:25px 6% 40px}
+.feature{text-align:center;font-size:14px;line-height:1.7;color:#d9d1f2}
+.feature b{display:block;color:#ffc5ed;margin:8px 0}
+footer{text-align:center;padding:28px 15px 38px;border-top:1px solid #ffffff15;color:#bdb7e0;font-size:13px;line-height:2}
+@media(max-width:650px){
+ header{padding:16px 5%;flex-wrap:wrap}
+ nav{order:3;width:100%;justify-content:space-between;gap:8px}
+ .logo{font-size:23px}
+ .hero{padding:45px 18px}
+ .section{padding:25px 4%}
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .card{padding:15px 12px;min-height:260px}
+ .card h3{font-size:17px}
+ .card p{font-size:12px}
+ .symbol{font-size:33px}
+ .bundle{margin:10px 4% 25px;padding:22px}
+ .features{grid-template-columns:repeat(2,1fr);gap:18px}
+}
+</style>
+</head>
+<body>
+<header>
+ <a class="logo" href="#">🪷 LOTUS</a>
+ <nav>
+  <a href="#">Нүүр</a>
+  <a href="#studies">Судалгаанууд</a>
+  <a href="#full">FULL LOTUS</a>
+ </nav>
+ <a class="login" href="#studies">Эхлэх</a>
+</header>
+
+<main>
+<section class="hero">
+ <div class="lotus">♧</div>
+ <h1>LOTUS</h1>
+ <div class="tagline">Өөрийгөө олох нь<br>Амар амгалан.</div>
+ <p class="intro">
+  Дотоод ертөнцөө таньж, өөрийн давуу тал,
+  сонирхол, боломжоо нээн илрүүлэх аялалдаа тавтай морил.
+ </p>
+ <a class="cta" href="#studies">Өөрийгөө нээх аяллаа эхлүүлэх →</a>
+</section>
+
+<section class="section" id="studies">
+ <h2>СУДАЛГААНУУД</h2>
+ <p class="sub">Өөрийгөө илүү гүнзгий таньж, амьдралаа илүү утга учиртай болгоорой.</p>
+ <div class="cards">
+  <article class="card future">
+   <div class="symbol">🚀</div>
+   <h3>Миний ирээдүй</h3>
+   <p>Таны давуу тал, сонирхол, мэргэжлийн чиглэл, хөгжлийн боломж.</p>
+   <div class="price">2,999₮</div>
+  </article>
+  <article class="card mind">
+   <div class="symbol">🧠</div>
+   <h3>Миний оюун ухаан</h3>
+   <p>Логик сэтгэлгээ, ой тогтоолт, анхаарал болон бодох арга барил.</p>
+   <div class="price">2,999₮</div>
+  </article>
+  <article class="card style">
+   <div class="symbol">✨</div>
+   <h3>Миний стиль</h3>
+   <p>Танд зохицох өнгө, хувцасны хэв маяг, үс засалт, гоо сайхны чиглэл.</p>
+   <div class="price">9,999₮</div>
+  </article>
+  <article class="card love">
+   <div class="symbol">❤️</div>
+   <h3>Миний хайр</h3>
+   <p>Таны үнэт зүйл, хайрлах хэв маяг, харилцааны онцлог, нийцтэй байдал.</p>
+   <div class="price">9,999₮</div>
+  </article>
+ </div>
+</section>
+
+<section class="bundle" id="full">
+ <h2>🪷 FULL LOTUS</h2>
+ <strong>Өөрийгөө бүхэлд нь таних аялал</strong>
+ <p>Дөрвөн судалгааг нэгтгэсэн багц. Таны давуу тал, сэтгэлгээ, стиль, харилцааны талаар нэгтгэсэн тайлан авах боломж.</p>
+ <div class="price">19,999₮</div>
+ <p style="font-size:12px">Төлбөрийн систем удахгүй холбогдоно.</p>
+</section>
+
+<section class="features">
+ <div class="feature">🔒<b>Нууцлал</b>Таны мэдээллийг хамгаалах зарчим</div>
+ <div class="feature">🔎<b>Судалгаанд суурилсан</b>Ойлгомжтой, хариуцлагатай тайлбар</div>
+ <div class="feature">🪷<b>Хувийн тайлан</b>Танд тохирсон зөвлөмжийн зорилго</div>
+ <div class="feature">📱<b>Хялбар хэрэглээ</b>Утаснаасаа ашиглахад тохиромжтой</div>
+</section>
+</main>
+
+<footer>
+ <div>“Өөрийгөө олох нь — Амар амгалан.”</div>
+ <div>LOTUS © 2026</div>
+ <div>Эдгээр судалгаа нь өөрийгөө танин мэдэхэд зориулсан бөгөөд эмнэлзүйн онош биш.</div>
+</footer>
+</body>
+</html>
